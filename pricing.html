@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Агенція цифрового дизайну - ціна</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="body-wrapper">
+    <section class="preheader">
+      <div class="container">
+        <div class="preheader__inner">
+          <p>Отримайте знижку 30%</p>
+        </div>
+      </div>
+    </section>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo"><a class="header__link" href="index.html"><img class="header__link-img"
+                src="images/logo.png" alt="logo"></a></div>
+          <nav class="header__menu">
+            <a href="#">Особливості</a>
+            <a href="pricing.html">Ціна</a>
+            <a href="sale.html">Пропозиції</a>
+          </nav>
+          <div class="header__btn">
+            <button type="button" class="header__btn btn show-modal">Увійти</button>
+          </div>
+          <div class="burger__menu" onclick="toggleMenu()">
+            <img src="images/burger.webp" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="header__line"></div>
+    </header>
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h3 class="about__maintext">Введіть ваші дані для входу</h3>
+      <input type="text" placeholder="Імя"><br>
+      <input type="password" placeholder="Пароль"><br>
+      <button type="button" class="header__btn btn">Увійти</button>
+    </div>
+    <a id="button"></a>
+    <div class="overlay hidden"></div>
+    <section class="services">
+      <div class="container">
+        <div class="services__inner">
+          <div class="services__title">Команда</div>
+          <div class="services__maintext">Професійна команда</div>
+          <div class="services__text"> Ми цінуємо кожного учасника нашої команди за їхній внесок та унікальний погляд на
+            завдання. Наша спільна праця базується на відкритості, взаєморозумінні та прагненні до досягнення найвищих
+            стандартів якості.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="teampics">
+      <div class="container">
+        <div class="teampics__inner">
+          <div class="teampics__item1">
+            <div class="teampics__pic1 scrollreveal"><img src="images/team-first.png" alt="Sandra Robert">
+            </div>
+            <div class="teampics__textblock1 scrollreveal">
+              <div class="teampics__maintext">Сандра Роберт</div>
+              <div class="teampics__text">Графічний дизайнер</div>
+            </div>
+          </div>
+          <div class="teampics__item2">
+            <div class="teampics__pic2 scrollreveal"><img src="images/team-second.png" alt="Jony Paul"></div>
+            <div class="teampics__textblock2 scrollreveal">
+              <div class="teampics__maintext">Джоні Паул</div>
+              <div class="teampics__text">Головний розробник</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="container">
+        <div class="services__inner">
+          <div class="services__title">Вартість</div>
+          <div class="services__maintext">Тарифи та ціни</div>
+          <div class="services__text">Ми пропонуємо прозору систему ціноутворення, яка відображає вартість наших послуг
+            та
+            надає можливість обрати оптимальний варіант для вашого бюджету.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pricetable">
+      <div class="container">
+        <div class="pricetable__inner">
+          <div class="pricetable__item">
+            <div class="pricetable__item__plan">
+              <img src="images/pricelistimg-3.png" alt="" />
+              <div class="pricelist__firstnum">$0</div>
+              <div class="pricetable__item__plan__name">Free</div>
+            </div>
+            <div class="pricetable__item__divider"></div>
+            <div class="pricetable__item__info">
+              <div class="pricetable__item__info__text">Обмежений доступ</div>
+              <div class="pricetable__item__info__text">Демонстрація послуг</div>
+              <div class="pricetable__item__info__text">Оцінка якості</div>
+            </div>
+          </div>
+          <div class="pricetable__item">
+            <div class="pricetable__item__plan">
+              <img src="images/pricelistimg-2.png" alt="" />
+              <div class="pricetable__item__plan__price">
+                <div class="pricelist__pricenum">
+                  <div class="pricelist__firstnum">$12</div>
+                  <div class="pricelist__secnum">/mo</div>
+                </div>
+              </div>
+              <div class="pricetable__item__plan__name">Agency</div>
+            </div>
+            <div class="pricetable__item__divider"></div>
+            <div class="pricetable__item__info">
+              <div class="pricetable__item__info__text">Зручність</div>
+              <div class="pricetable__item__info__text">Персоналізація</div>
+              <div class="pricetable__item__info__text">Ефективність</div>
+            </div>
+          </div>
+          <div class="pricetable__item">
+            <div class="pricetable__item__plan">
+              <img src="images/pricelistimg-1.png" alt="" />
+              <div class="pricetable__item__plan__price">
+                <div class="pricelist__pricenum">
+                  <div class="pricelist__firstnum">$28</div>
+                  <div class="pricelist__secnum">/mo</div>
+                </div>
+              </div>
+              <div class="pricetable__item__plan__name">Pro</div>
+            </div>
+            <div class="pricetable__item__divider"></div>
+            <div class="pricetable__item__info">
+              <div class="pricetable__item__info__text">Комплексність</div>
+              <div class="pricetable__item__info__text">Вдосконалення</div>
+              <div class="pricetable__item__info__text">Перспективая</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="getstarted">
+      <div class="container">
+        <button class="getstarted__button">Розпочати</button>
+      </div>
+    </section>
+    <section class="services">
+      <div class="container">
+        <div class="services__inner">
+          <div class="services__title">Відгуки</div>
+          <div class="services__maintext">Що говорять люди</div>
+          <div class="services__text">
+            Клієнти високо цінують наші інновації та якість роботи, рекомендують нас за професіоналізм та уважний
+            підхід.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="comment">
+      <div class="container">
+        <div class="comment__inner">
+          <div class="comment__pic">
+            <img src="images/comment-pic.png" alt="" />
+          </div>
+          <div class="comment__text">
+            Я отримала надзвичайно професійний підхід до розв'язання моїх проблем. Команда професіоналів
+            продемонструвала
+            високий рівень експертності та турботи про успіх мого проєкту. Рекомендую ваші послуги із задоволенням!
+          </div>
+          <div class="comment__account">
+            <div class="comment__avatar">
+              <img src="images/comment-avatar.png" alt="" />
+            </div>
+            <div class="comment__info">
+              <div class="comment__accountname">Олівер Шарлотта</div>
+              <div class="comment__facebook">Facebook</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__maintext">
+            <div class="footer__item">
+              <div class="footer__logo">
+                <img src="images/footer-logo.png" alt="" />
+              </div>
+              <div class="footer__address">
+                65 Форест-Хілс, <br />Нью-Йорк 11209
+              </div>
+              <div class="footer__socials">
+                <img src="images/socials-facebook.png" alt="Facebook" />
+                <img src="images/socials-instagram.png" alt="Instagram" />
+                <img src="images/socials-linkedin.png" alt="Linked-In" />
+                <img src="images/socials-twitter.png" alt="Twitter" />
+              </div>
+            </div>
+            <div class="footer__item">
+              <div class="footer__contactinfo">Контактна інформація</div>
+              <div class="footer__contactaddress">
+                Телефонуйте нам: <br />+01 (234) 567-891 <br />Електронна пошта:
+                <br />support@maool.com
+              </div>
+            </div>
+            <div class="footer__item">
+              <div class="footer__morelinks">Більше посилань</div>
+              <div class="footer__links">
+                Центр допомоги <br />Мій аккаунт <br />Контакти <br />Конфіденційність
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="footer__rights">
+            <div class="footer__rightstext">
+              @2021 Maool Inc. Усі права захищено.
+            </div>
+            <div class="footer__subscribe">Відписатися</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
